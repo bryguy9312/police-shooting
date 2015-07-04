@@ -1,1 +1,6 @@
 /* You'll probably want to add some styles here */
+
+#container {
+    width: 500px;
+    height: 500px;
+}
