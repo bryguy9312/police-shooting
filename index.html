@@ -7,14 +7,36 @@
         <title>Police Shootings</title>
         <!-- Get the leaflet.js library and stylesheet -->
         <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+
+
+
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="css/leaflet.awesome-markers.css">
+        <script src="js/leaflet.awesome-markers.js"></script>
         <link rel="stylesheet" href="css/main.css"/>
     </head>
 
     <body>
-        <div id="container" style="..."></div>
-        <script>
-            drawMap();
-        </script>
+
+        <div id="main">
+            <h1>Police Shootings in the US</h1>
+            <p>This map covers all police officer shootings in the US since 2014.
+                Each dot on the map represents an incident, with red dots indicating fatalities and
+                blue dots representing hits that did not result in death. Any dots outside of the
+                US are the result of errors in the source data and should be ignored.
+            </p>
+            <div id="container" style="..."></div>
+            <script>
+                drawMap();
+            </script>
+            <div id="footer">
+                <p>
+                    <a href="https://docs.google.com/spreadsheets/d/1cEGQ3eAFKpFBVq1k2mZIy5mBPxC6nBTJHzuSWtZQSVw/edit#gid=1144428085">
+                        You can find the original data from Deadspin here.</a>
+                </p>
+            </div>
+        </div>
     </body>
 </html>
